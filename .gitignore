@@ -1,0 +1,14 @@
+# -------------------------------------------------------------------------------------------------
+# File create by Dk4LL (dk4ll@proton.me)
+# -------------------------------------------------------------------------------------------------
+
+# Ignore UNIX-Like file system
+.DS_Store
+
+# Ignore lazy-lock and luarc files
+lazy-lock.json
+.luarc.json
+
+
+# Ignore specific folders 
+#plugged/
