@@ -84,7 +84,8 @@ return {
           sD = { name = "Botton resize" },
           sL = { name = "Left resize" },
           sR = { name = "Right resize" }
-        }
+        },
+        ["z"] = { name = "Folds" }
       })
     end,
   }

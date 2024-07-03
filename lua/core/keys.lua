@@ -15,10 +15,10 @@ keyset("n", "-", "<C-x>")
 keyset("n", "<C-a>", "gg<S-v>G")
 
 -- New tab
-keyset("n", "nt", ":tabedit")
+keyset("n", "<leader>nt", ":tabedit")
 
 -- Close tab
-keyset("n", "bd", ":bd<CR>", opts)
+keyset("n", "<leader>bd", ":bd<CR>", opts)
 
 -- Split window
 keyset("n", "<leader>sh", ":split<CR>", opts)

@@ -10,6 +10,8 @@ vim.g.mapleader = " "
 -- Define my localleader key
 vim.g.maplocalleader = "  "
 
+-- If no prettier config file is found, the formatter will not be used
+vim.g.lazyvim_prettier_needs_config = false
 -- Define std shell program
 vim.opt.shell = "zsh"
 
@@ -113,3 +115,11 @@ vim.opt.cursorline = true
 
 -- Desactive show mode
 vim.opt.showmode = false
+
+-- Enable use conform
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function(args)
+    require("conform").format({ bufnr = args.buf })
+  end,
+})
