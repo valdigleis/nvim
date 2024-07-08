@@ -96,6 +96,19 @@ return {
         ["K"] = {
           name = "Show Doc",
           K    = { "Switch to Doc popup" },
+        },
+        ["r"] = {
+          name = "Rename",
+          n    = "Symbol"
+        },
+        ["["] = {
+          name = "back navegation",
+        },
+        ["]"] = {
+          name = "Front navegation",
+        },
+        ["<C-a>"] = {
+          name = "Select all"
         }
       })
     end,
