@@ -37,3 +37,5 @@ keyset("n", "<C-w>_", "<nop>", opts)
 keyset("n", "<C-w>|", "<nop>", opts)
 
 keyset("n", "<C-w>i", "<nop>", opts)
+
+keyset("n", "K", "<nop>", opts)

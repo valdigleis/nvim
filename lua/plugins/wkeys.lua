@@ -1,5 +1,4 @@
 -- ------------------------------------------------------------------------------------------------
--- Install/Config file to which-key plugins
 -- File create by Valdigleis (Dk4LL) valdigleis@gmail.com
 -- Date: 24/06/2024
 -- ------------------------------------------------------------------------------------------------
@@ -26,7 +25,7 @@ return {
           group = "",
           ellipsis = "…",
           rules = false
-        }
+        },
       })
       wk.add({
 
@@ -45,9 +44,6 @@ return {
         { "<leader>gu", "u", desc = "Lowercase",                mode = "n" },
         { "<leader>gU", "U", desc = "Uppercase",                mode = "n" },
 
-        { "K",  desc = "Show Doc" },
-        { "KK", desc = "Switch to Doc popup" },
-        { "rn", desc = "Symbol" },
 
         { "z", group = "Folds" },
 
@@ -62,10 +58,15 @@ return {
         { "<leader>bn", ":tabedit<CR>", desc = "New Buffer unamed", mode = "n" },
 
         { "<leader>c", group = "Code Commands" },
-        { "<leader>ca", desc = "Code actions" },
-        { "<leader>cf", desc = "Code format" },
-        { "<leader>ci", desc = "Code implementation" },
-        { "<leader>cr", desc = "Code references" },
+        { "<leader>ca", vim.lsp.buf.code_action,      desc = "Code actions",              mode = "n" },
+        { "<leader>cf", vim.lsp.buf.format,           desc = "Code format",               mode = "n" },
+        { "<leader>ci", vim.lsp.buf.implementation,   desc = "Go to implementation",      mode = "n" },
+        { "<leader>cr", vim.lsp.buf.references,       desc = "Code references",           mode = "n" },
+        { "<leader>cD", vim.lsp.buf.declaration,      desc = "Go to declaration",         mode = "n" },
+        { "<leader>cd", vim.lsp.buf.definition,       desc = "Go to definition",          mode = "n" },
+        { "<leader>ct", vim.lsp.buf.type_definition,  desc = "Go type definition",        mode = "n" },
+        { "<leader>cr", vim.lsp.buf.rename,           desc = "Rename symbol",             mode = "n" },
+        { "<leader>ch", vim.lsp.buf.hover,            desc = "Open pop-up documentation", mode = "n" },
 
         { "<leader>e", group = "Explore Commands"},
         { "<leader>ef", desc = "Open Explore File" },
@@ -147,9 +148,13 @@ return {
 
 
         { "<leader>W", group = "Workspace Commands" },
-        { "<leader>Wa", desc = "Add to workspace" },
-        { "<leader>Wl", desc = "List workspace" },
-        { "<leader>Wr", desc = "Remove of the workspace" },
+        { '<leader>Wa', vim.lsp.buf.add_workspace_folder,     desc = "Add to workspace",        mode = "n" },
+        { '<leader>Wr', vim.lsp.buf.remove_workspace_folder,  desc = "Remove of the workspace", mode = "n" },
+        { "<leader>Wl", function()
+                          print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+                        end, 
+          desc = "List workspace", mode = "n" 
+        },
 
       })
     end,

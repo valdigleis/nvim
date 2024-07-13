@@ -10,26 +10,6 @@ return {
 
     local lspconfig = require("lspconfig")
 
-    -- Define keymaps to lsp
-    local keymap = vim.keymap.set
-
-    keymap('n', 'K', vim.lsp.buf.hover, {})
-    keymap('n', 'gD', vim.lsp.buf.declaration, {})
-    keymap('n', 'gd', vim.lsp.buf.definition, {})
-    keymap('n', 'tD', vim.lsp.buf.type_definition, {})
-    keymap('n', 'rn', vim.lsp.buf.rename, {})
-
-    keymap('n', '<leader>cf', vim.lsp.buf.format, {})
-    keymap('n', '<leader>cr', vim.lsp.buf.references, {})
-    keymap('n', '<leader>ci', vim.lsp.buf.implementation, {})
-    keymap('n', '<leader>ca', vim.lsp.buf.code_action, {})
-
-    keymap('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, {})
-    keymap('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, {})
-    keymap('n', '<leader>wl', function()
-      print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-    end, {})
-
     -- Astro
     lspconfig.astro.setup({
       capabilities = capabilities,
