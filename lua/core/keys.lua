@@ -7,39 +7,33 @@
 local keyset = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- Increment/decrement
-keyset("n", "+", "<C-a>")
-keyset("n", "-", "<C-x>")
+-- Remove default keys
+keyset("n", "<C-a>", "<nop>", opts) 
+keyset("n", "<C-x>", "<nop>", opts) 
+keyset("n", "gg<S-v>G", "<nop>", opts) 
 
--- Select all
-keyset("n", "<C-a>", "gg<S-v>G")
+keyset("n", "<C-w>h", "<nop>", opts) 
+keyset("n", "<C-w>l", "<nop>", opts)
+keyset("n", "<C-w>k", "<nop>", opts)
 
--- New tab
-keyset("n", "<leader>bn", ":tabedit")
+keyset("n", "<C-w>j", "<nop>", opts)
+keyset("n", "<C-w><", "<nop>", opts) 
+keyset("n", "<C-w>>", "<nop>", opts)
 
--- Close tab
-keyset("n", "<leader>bd", ":bd<CR>", opts)
+keyset("n", "<C-w>+", "<nop>", opts)
+keyset("n", "<C-w>-", "<nop>", opts)
+keyset("n", "<C-w>w", "<nop>", opts)
 
--- Split window
-keyset("n", "<leader>sh", ":split<CR>", opts)
-keyset("n", "<leader>sv", ":vsplit<CR>", opts)
+keyset("n", "<C-w>s", "<nop>", opts)
+keyset("n", "<C-w>v", "<nop>", opts)
+keyset("n", "<C-w>d", "<nop>", opts)
 
--- Move window
-keyset("n", "<leader>sl", "<C-w>h")
-keyset("n", "<leader>sr", "<C-w>l")
-keyset("n", "<leader>su", "<C-w>k")
-keyset("n", "<leader>sd", "<C-w>j")
+keyset("n", "<C-w>o", "<nop>", opts)
+keyset("n", "<C-w>q", "<nop>", opts)
+keyset("n", "<C-w>T", "<nop>", opts)
 
--- Resize window
-keyset("n", "<leader>sL", "<C-w><")
-keyset("n", "<leader>sR", "<C-w>>")
-keyset("n", "<leader>sU", "<C-w>+")
-keyset("n", "<leader>sD", "<C-w>-")
+keyset("n", "<C-w>x", "<nop>", opts)
+keyset("n", "<C-w>_", "<nop>", opts)
+keyset("n", "<C-w>|", "<nop>", opts)
 
-
--- Live-server keys (start and stop)
-keyset("n", "<leader>LL", ":LiveServerStart<CR>", opts)
-keyset("n", "<leader>LD", ":LiveServerStop<CR>", opts)
-keyset("n", "<leader>T", ":ToggleTerm<CR>", opts)
-
--- Keymaps for Lean Theorem Prove
+keyset("n", "<C-w>i", "<nop>", opts)
