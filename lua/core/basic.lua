@@ -116,3 +116,5 @@ vim.opt.cursorline = true
 -- Desactive show mode
 vim.opt.showmode = false
 
+-- Desactive fold-automatic
+vim.opt.foldlevelstart = 99
