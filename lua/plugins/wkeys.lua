@@ -9,6 +9,7 @@ return {
     event = "VeryLazy",
     config = function()
       local wk = require("which-key")
+      local built = require('telescope.builtin')
       wk.setup({
         modes = {
           n = true,   -- Normal mode
@@ -29,66 +30,66 @@ return {
       })
       wk.add({
 
-        { "<C-a>", "gg<S-v>G",   desc = "Select all text", mode = "n" },
+
         { "<leader>", desc = "Commands" },
-        { "<",        desc = "Indent left" },
-        { ">",        desc = "Indent right" },
 
-
-        { "<leader>g", group = "Go & Edit Commands" },
-        { "<leader>gg", "gg", desc = "Jump to first line",      mode = "n" },
-        { "<leader>gG", "G",  desc = "Jump to last line",       mode = "n" },
-
-        { "<leader>gt", "t", desc = "Go to next tab page",      mode = "n" },
-        { "<leader>gT", "T", desc = "Go to previous tab page",  mode = "n" },
-        { "<leader>gu", "u", desc = "Lowercase",                mode = "n" },
-        { "<leader>gU", "U", desc = "Uppercase",                mode = "n" },
-
-
-        { "z", group = "Folds" },
-
-        { "[", desc = "back navegation" },
-        { "]", desc = "Front navegation" },
-
+        -- ---------------------------------------------------------------------------
+        -- Tips
+        -- ---------------------------------------------------------------------------
+        { "K", desc = "Show documentation pop-up", mode = "n" },
+        { "<C-a>", "gg<S-v>G",   desc = "Select all text", mode = "n" },
         { "+", "<C-a>", desc = "Increase value in 1",  mode = "n" },
         { "-", "<C-x>", desc = "Decrease value in 1",  mode = "n" },
 
+        -- ---------------------------------------------------------------------------
+        -- Buffers Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>b", group = "Buffers Commands" },
-        { "<leader>bd", ":bd<CR>", desc = "Delete current buffer", mode = "n" },
-        { "<leader>bn", ":tabedit<CR>", desc = "New Buffer unamed", mode = "n" },
+        { "<leader>bd", ":bd<CR>",      desc = "Delete current buffer", mode = "n" },
+        { "<leader>bn", ":tabedit<CR>", desc = "New Buffer unamed",     mode = "n" },
 
-        { "<leader>c", group = "Code Commands" },
-        { "<leader>ca", vim.lsp.buf.code_action,      desc = "Code actions",              mode = "n" },
-        { "<leader>cf", vim.lsp.buf.format,           desc = "Code format",               mode = "n" },
-        { "<leader>ci", vim.lsp.buf.implementation,   desc = "Go to implementation",      mode = "n" },
-        { "<leader>cr", vim.lsp.buf.references,       desc = "Code references",           mode = "n" },
-        { "<leader>cD", vim.lsp.buf.declaration,      desc = "Go to declaration",         mode = "n" },
-        { "<leader>cd", vim.lsp.buf.definition,       desc = "Go to definition",          mode = "n" },
-        { "<leader>ct", vim.lsp.buf.type_definition,  desc = "Go type definition",        mode = "n" },
-        { "<leader>cr", vim.lsp.buf.rename,           desc = "Rename symbol",             mode = "n" },
-        { "<leader>ch", vim.lsp.buf.hover,            desc = "Open pop-up documentation", mode = "n" },
-
+        -- ---------------------------------------------------------------------------
+        -- Explore Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>e", group = "Explore Commands"},
-        { "<leader>ef", desc = "Open Explore File" },
-        { "<leader>eg", desc = "Open Explore File with git" },
+        { "<leader>ef", ":Neotree filesystem reveal left<CR>",            desc = "Open Explore File",           mode = "n" },
+        { "<leader>eg", ":Neotree filesystem git_status reveal left<CR>", desc = "Open Explore File with git",  mode = "n" },
 
+        -- ---------------------------------------------------------------------------
+        -- Git Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>G", group = "Git Commands" },
         { "<leader>Gb", desc = "Git blame" },
         { "<leader>Gp", desc = "Gitsigns preview hunk" },
         { "<leader>Gt", desc = "Gitsigns toggle current line blame" },
 
+        -- ---------------------------------------------------------------------------
+        -- LSP Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>l", group = "LSP Commands" },
-        { "<leader>lC", desc = "Outgoing calls" },
-        { "<leader>lD", desc = "Definitions" },
-        { "<leader>lS", desc = "Dynamic workspace symbols" },
-        { "<leader>lc", desc = "Incoming calls" },
-        { "<leader>ld", desc = "Diagnostics" },
-        { "<leader>li", desc = "Implementations" },
-        { "<leader>lk", desc = "Document symbols" },
-        { "<leader>lr", desc = "Reference" },
-        { "<leader>ls", desc = "Workspace symbols" },
-        { "<leader>lt", desc = "Types definitions" },
+        { "<leader>la", vim.lsp.buf.code_action,              desc = "Code actions",                        mode = "n" },
+        { "<leader>lA", built.lsp_references,                 desc = "Show References list",                mode = "n" },
+        { "<leader>lb", built.diagnostics,                    desc = "Show Diagnostics in open buffers",    mode = "n" },
+        { "<leader>lB", built.lsp_definitions,                desc = "Go to Definition or show infos",      mode = "n" },
+        { "<leader>lc", built.lsp_incoming_calls,             desc = "Show incoming calls list",            mode = "n" },
+        { "<leader>lC", built.lsp_outgoing_calls,             desc = "Show outgoing calls list",            mode = "n" },
+        { "<leader>ld", vim.lsp.buf.definition,               desc = "Jump to definition",                  mode = "n" },
+        { "<leader>lD", vim.lsp.buf.declaration,              desc = "Jump to declaration",                 mode = "n" },
+        { "<leader>lf", vim.lsp.buf.format,                   desc = "Code format",                         mode = "n" },
+        --{ "<leader>lh", vim.lsp.buf.hover,                    desc = "Open pop-up documentation",           mode = "n" },
+        { "<leader>li", vim.lsp.buf.implementation,           desc = "Jump to implementation",              mode = "n" },
+        { "<leader>lI", built.lsp_implementations,            desc = "Go to Implementation or show infos",  mode = "n" },
+        { "<leader>lr", vim.lsp.buf.references,               desc = "Code references",                     mode = "n" },
+        { "<leader>lR", vim.lsp.buf.rename,                   desc = "Rename symbol",                       mode = "n" },
+        { "<leader>ls", built.lsp_document_symbols,           desc = "Show symbols on current buffer",      mode = "n" },
+        { "<leader>lS", built.lsp_workspace_symbols,          desc = "Show symbols on current workspace",   mode = "n" },
+        { "<leader>lt", vim.lsp.buf.type_definition,          desc = "Jump to type definition",             mode = "n" },
+        { "<leader>lT", built.lsp_type_definitions,           desc = "Go to Type Definition or Show infos", mode = "n" },
+        { "<leader>lw", built.lsp_dynamic_workspace_symbols,  desc = "Show symbols on all workspace",       mode = "n" },
 
+        -- ---------------------------------------------------------------------------
+        -- Windows Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>w", group = "Windows Commands" },
         { "<leader>wD", "<C-w>+", desc = "Botton resize",                     mode = "n" },
         { "<leader>wL", "<C-w><", desc = "Left resize",                       mode = "n" },
@@ -109,7 +110,9 @@ return {
         { "<leader>wm", "<C-w>_", desc = "Max out the height",                mode = "n" },
         { "<leader>wm", "<C-w>|", desc = "Max out the width",                 mode = "n" },
 
-
+        -- ---------------------------------------------------------------------------
+        -- Telescope Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>t", group = "Telescope Commands" },
         { "<leader>tB", desc = "Buffer fuzzy find" },
         { "<leader>tC", desc = "Command history" },
@@ -141,19 +144,24 @@ return {
         { "<leader>tu", desc = "Multi selections previous picker" },
         { "<leader>tv", desc = "Show color schemes" },
 
+        -- ---------------------------------------------------------------------------
+        -- Tools Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>T",  group = "Tools Commands" },
-        { "<leader>TT", ":ToggleTerm<CR>",      desc = "Open Terminal",     mode = "n" },
+        { "<leader>Tt", ":ToggleTerm<CR>",      desc = "Open Terminal",     mode = "n" },
         { "<leader>Tl", ":LiveServerStart<CR>", desc = "Start Live Server", mode = "n" },
         { "<leader>TL", ":LiveServerStop<CR>",  desc = "Stop Live server",  mode = "n" },
 
-
+        -- ---------------------------------------------------------------------------
+        -- Workspace Commands
+        -- ---------------------------------------------------------------------------
         { "<leader>W", group = "Workspace Commands" },
         { '<leader>Wa', vim.lsp.buf.add_workspace_folder,     desc = "Add to workspace",        mode = "n" },
         { '<leader>Wr', vim.lsp.buf.remove_workspace_folder,  desc = "Remove of the workspace", mode = "n" },
         { "<leader>Wl", function()
                           print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-                        end, 
-          desc = "List workspace", mode = "n" 
+                        end,
+          desc = "List workspace", mode = "n"
         },
 
       })
