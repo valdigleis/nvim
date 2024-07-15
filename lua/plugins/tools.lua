@@ -19,11 +19,31 @@ return {
   --    })
   --  end
   --},
+  --{
+  --  'barrett-ruth/live-server.nvim',
+    --build = 'npm add -g live-server',
+  --  cmd = { 'LiveServerStart', 'LiveServerStop' },
+  --  config = true
+  --},
   {
-    'barrett-ruth/live-server.nvim',
-    --build = 'pnpm add -g live-server',
-    cmd = { 'LiveServerStart', 'LiveServerStop' },
-    config = true
+    'ray-x/web-tools.nvim',
+    config = function()
+      require("web-tools").setup({
+        keymaps = {
+          rename = nil,
+          repeat_rename = '.',
+        },
+        hurl = {
+          show_headers = false,
+          floating = false,
+          json5 = false,
+          --formatters = {
+          --  json = { 'jq' },
+          --  html = { 'prettier', '--parser', 'html' },
+          --},
+        },
+      })
+    end
   },
   {
     'akinsho/toggleterm.nvim',

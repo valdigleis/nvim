@@ -8,6 +8,9 @@ Please install on your system:
 * [NeoVim](https://neovim.io/) (this one is obvious).
 * [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
 * [ripgrep](https://github.com/BurntSushi/ripgrep).
+* [Hurl](https://hurl.dev/)
+* [browser-sync](https://github.com/BrowserSync/browser-sync)
+* [lean](https://leanprover-community.github.io/get_started.html)
 
 ## Languages and Tools
 It is also necessary to install the following languages and tools on your system:
@@ -15,8 +18,6 @@ It is also necessary to install the following languages and tools on your system
 * [astro](https://www.npmjs.com/package/astro)
 * [clang](https://clang.llvm.org/)
 * [ghcup](https://www.haskell.org/ghcup/)
-* [lean](https://leanprover-community.github.io/get_started.html)
-* [live-server](https://www.npmjs.com/package/live-server)
 * [opam](https://opam.ocaml.org/)
 * [swi-prolog](https://https://www.swi-prolog.org/)
 * [tailwindcss](https://tailwindcss.com/)

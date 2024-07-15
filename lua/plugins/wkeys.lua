@@ -148,9 +148,11 @@ return {
         -- Tools Commands
         -- ---------------------------------------------------------------------------
         { "<leader>T",  group = "Tools Commands" },
-        { "<leader>Tt", ":ToggleTerm<CR>",      desc = "Open Terminal",     mode = "n" },
-        { "<leader>Tl", ":LiveServerStart<CR>", desc = "Start Live Server", mode = "n" },
-        { "<leader>TL", ":LiveServerStop<CR>",  desc = "Stop Live server",  mode = "n" },
+        { "<leader>Tt", ":ToggleTerm<CR>",      desc = "Open Terminal",   mode = "n" },
+        { "<leader>To", ":BrowserOpen<CR>",     desc = "Open Web Server", mode = "n" },
+
+        --{ "<leader>Ts", ":LiveServerStart<CR>", desc = "Start Live Server", mode = "n" },
+        --{ "<leader>Tk", ":LiveServerStop<CR>",  desc = "Kill Live server",  mode = "n" },
 
         -- ---------------------------------------------------------------------------
         -- Workspace Commands

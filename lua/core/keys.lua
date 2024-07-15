@@ -7,17 +7,21 @@
 local keyset = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+-- Live-server keys (start and stop)
+--keyset("n", "<leader>Ts", ":LiveServerStart<CR>", opts)
+--keyset("n", "<leader>Tk", ":LiveServerStop<CR>", opts)
+
 -- Remove default keys
 --keyset("n", "<C-a>", "<nop>", opts) 
 --keyset("n", "<C-x>", "<nop>", opts) 
 --keyset("n", "gg<S-v>G", "<nop>", opts) 
 
-keyset("n", "<C-w>h", "<nop>", opts) 
+keyset("n", "<C-w>h", "<nop>", opts)
 keyset("n", "<C-w>l", "<nop>", opts)
 keyset("n", "<C-w>k", "<nop>", opts)
 
 keyset("n", "<C-w>j", "<nop>", opts)
-keyset("n", "<C-w><", "<nop>", opts) 
+keyset("n", "<C-w><", "<nop>", opts)
 keyset("n", "<C-w>>", "<nop>", opts)
 
 keyset("n", "<C-w>+", "<nop>", opts)
