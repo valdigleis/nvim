@@ -6,19 +6,25 @@
 return {
   {
     "folke/which-key.nvim",
+    dependencies = {
+      "echasnovski/mini.icons",
+    },
     event = "VeryLazy",
     config = function()
       local wk = require("which-key")
       local built = require('telescope.builtin')
       wk.setup({
-        modes = {
-          n = true,   -- Normal mode
-          i = true,   -- Insert mode
-          x = false,  -- Visual mode
-          s = false,  -- Select mode
-          o = false,  -- Operator pending mode
-          t = false,  -- Terminal mode
-          c = false,  -- Command mode
+        --modes = {
+        --  n = true,   -- Normal mode
+        --  i = true,   -- Insert mode
+        --  x = false,  -- Visual mode
+        --  s = false,  -- Select mode
+        --  o = false,  -- Operator pending mode
+        --  t = false,  -- Terminal mode
+        --  c = false,  -- Command mode
+        --},
+        triggers = {
+          { "<leader>", mode = { "n", "v" } },
         },
         icons = {
           breadcrumb = "»",
@@ -90,25 +96,25 @@ return {
         -- ---------------------------------------------------------------------------
         -- Windows Commands
         -- ---------------------------------------------------------------------------
-        { "<leader>w", group = "Windows Commands" },
-        { "<leader>wD", "<C-w>+", desc = "Botton resize",                     mode = "n" },
-        { "<leader>wL", "<C-w><", desc = "Left resize",                       mode = "n" },
-        { "<leader>wR", "<C-w>>", desc = "Right resize",                      mode = "n" },
-        { "<leader>wU", "<C-w>+", desc = "Top resize",                        mode = "n" },
-        { "<leader>wd", "<C-w>j", desc = "Move to down",                      mode = "n" },
-        { "<leader>ws", "<C-w>s", desc = "Split horizontal",                  mode = "n" },
-        { "<leader>wl", "<C-w>h", desc = "Move to left",                      mode = "n" },
-        { "<leader>wr", "<C-w>l", desc = "Move to right",                     mode = "n" },
-        { "<leader>wu", "<C-w>k", desc = "Move to up",                        mode = "n" },
-        { "<leader>wv", "<C-w>v", desc = "Split vertical",                    mode = "n" },
-        { "<leader>ww", "<C-w>w", desc = "Switch windows",                    mode = "n" },
-        { "<leader>wD", "<C-w>d", desc = "Show diagnostics under the cursor", mode = "n" },
-        { "<leader>wx", "<C-w>o", desc = "Close all other windows",           mode = "n" },
-        { "<leader>wq", "<C-w>q", desc = "Quit a window",                     mode = "n" },
-        { "<leader>wt", "<C-w>T", desc = "Break out into a new tab",          mode = "n" },
-        { "<leader>wS", "<C-w>x", desc = "Swap current with next",            mode = "n" },
-        { "<leader>wm", "<C-w>_", desc = "Max out the height",                mode = "n" },
-        { "<leader>wm", "<C-w>|", desc = "Max out the width",                 mode = "n" },
+        --{ "<leader>w", group = "Windows Commands" },
+        --{ "<leader>wD", "<C-w>+", desc = "Botton resize",                     mode = "n" },
+        --{ "<leader>wL", "<C-w><", desc = "Left resize",                       mode = "n" },
+        --{ "<leader>wR", "<C-w>>", desc = "Right resize",                      mode = "n" },
+        --{ "<leader>wU", "<C-w>+", desc = "Top resize",                        mode = "n" },
+        --{ "<leader>wd", "<C-w>j", desc = "Move to down",                      mode = "n" },
+        --{ "<leader>ws", "<C-w>s", desc = "Split horizontal",                  mode = "n" },
+        --{ "<leader>wl", "<C-w>h", desc = "Move to left",                      mode = "n" },
+        --{ "<leader>wr", "<C-w>l", desc = "Move to right",                     mode = "n" },
+        --{ "<leader>wu", "<C-w>k", desc = "Move to up",                        mode = "n" },
+        --{ "<leader>wv", "<C-w>v", desc = "Split vertical",                    mode = "n" },
+        --{ "<leader>ww", "<C-w>w", desc = "Switch windows",                    mode = "n" },
+        --{ "<leader>wD", "<C-w>d", desc = "Show diagnostics under the cursor", mode = "n" },
+        --{ "<leader>wx", "<C-w>o", desc = "Close all other windows",           mode = "n" },
+        --{ "<leader>wq", "<C-w>q", desc = "Quit a window",                     mode = "n" },
+        --{ "<leader>wt", "<C-w>T", desc = "Break out into a new tab",          mode = "n" },
+        --{ "<leader>wS", "<C-w>x", desc = "Swap current with next",            mode = "n" },
+        --{ "<leader>wm", "<C-w>_", desc = "Max out the height",                mode = "n" },
+        --{ "<leader>wm", "<C-w>|", desc = "Max out the width",                 mode = "n" },
 
         -- ---------------------------------------------------------------------------
         -- Telescope Commands

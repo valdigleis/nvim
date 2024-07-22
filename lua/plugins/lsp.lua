@@ -50,6 +50,10 @@ return {
       capabilities = capabilities,
     })
 
+    lspconfig.phpactor.setup({
+      capabilities = capabilities,
+    })
+
     -- Prolog
     lspconfig.prolog_lsp.setup({
       capabilities = capabilities,
