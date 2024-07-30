@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------------------------
--- Config file to welcone screen and 
+-- Config file to welcone screen and noice.nvim 
 -- File create by Valdigleis (Dk4LL) dk4ll@proton.me
 -- Date: 23/04/2024
 -- ------------------------------------------------------------------------------------------------

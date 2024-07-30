@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------------------------
--- Install/Config file to lualine
+-- Install/Config file to lualine and nvim-cokeline
 -- File create by Valdigleis (Dk4LL) valdigleis@gmail.com
 -- Date: 14/03/2024
 -- ------------------------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------------------------
--- Install/Config file to theorem proofs plugins
+-- Install/Config file to lean prover plugin
 -- File create by Valdigleis (Dk4LL) valdigleis@gmail.com
 -- Date: 09/05/2024
 -- ------------------------------------------------------------------------------------------------
