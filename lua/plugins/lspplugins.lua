@@ -116,6 +116,13 @@ return {
           }
         }
       })
+      -- Prolog
+      lspconfig.prolog_ls.setup({
+        cmd = { 'swipl', '-g', 'use_module(library(lsp_server)).', '-g', 'lsp_server:main', '-t', 'halt', '--', 'stdio', },
+        filetypes = { 'prolog', 'pl' },
+        --root_dir = lspconfig.util.root_pattern 'pack.pl',
+        single_file_support = true,
+      })
       -- Python
       lspconfig.pyright.setup({ capabilities = capabilities })
       -- LaTex
