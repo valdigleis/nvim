@@ -13,6 +13,7 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 - The plugin manager [Lazy](https://lazy.folke.io/) for [NeoVim](https://neovim.io).
 - The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
 - A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
+- The language [Lean](https://lean-lang.org/download/) (version 4) and the library [mathlib4](https://github.com/leanprover-community/mathlib4).
 - The language server to the language Bash, called [bash-language-server](https://github.com/bash-lsp/bash-language-server).
 - The language server to the language C/C++, called [clangd](https://clangd.llvm.org/).
 - The language server to the languages CSS, HTML and Javascript, called [vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted).
