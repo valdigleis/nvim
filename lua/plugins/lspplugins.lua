@@ -9,33 +9,21 @@ return {
     "hrsh7th/cmp-nvim-lsp",
   },
   {
-    "neovim/nvim-lspconfig",
-    config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      local lspconfig = require("lspconfig")
-      -- ------------------------------------------------------------------------------------------
-      -- Config to LSP useds here
-      -- ------------------------------------------------------------------------------------------
-      -- C/C++ (Clangd)
-      lspconfig.clangd.setup({ capabilities = capabilities, })
-    end
-  },
-  {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require('cmp')
-      -- require("luasnip.loaders.from_vscode").lazy_load()
+      require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
         snippet = {
           expand = function(args)
             -- vim.fn["vsnip#anonymous"](args.body)
-            -- require("luasnip").lsp_expand(args.body)
+            require("luasnip").lsp_expand(args.body)
           end
         },
         window = {
-          --completion = cmp.config.window.bordered(),
-          --documentation = cmp.config.window.bordered(),
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
         },
 
         cmp.setup.filetype('gitcommit', {
@@ -63,11 +51,52 @@ return {
       })
     end
   },
-  --{
-  --  "L3MON4D3/LuaSnip",
-  --  dependencies = {
-  --    "saadparwaiz1/cmp_luasnip",
-  --    "rafamadriz/friendly-snippets"
-  --  },
-  --}
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets"
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local lspconfig = require("lspconfig")
+      -- ------------------------------------------------------------------------------------------
+      -- Config to LSP useds here
+      -- ------------------------------------------------------------------------------------------
+      -- Bash
+      lspconfig.bashls.setup({
+        cmd = { 'bash-language-server', 'start' },
+        settings = {
+          bashIde = {
+            globPattern = vim.env.GLOB_PATTERN or '*@(.sh|.inc|.bash|.command)',
+          },
+        },
+        filetypes = { 'sh' },
+        root_dir = lspconfig.util.find_git_ancestor,
+        single_file_support = true,
+      })
+      -- CSS
+      lspconfig.cssls.setup({ capabilities = capabilities, })
+      -- C/C++ (Clangd)
+      lspconfig.clangd.setup({ capabilities = capabilities, })
+      -- Haskell
+      lspconfig.hls.setup({
+        cmd = { 'haskell-language-server-wrapper', '--lsp' },
+        filetypes = { 'haskell', 'lhaskell', 'hs' },
+        root_dir = lspconfig.util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
+        single_file_support = true,
+        settings = {
+          haskell = {
+            formattingProvider = 'ormolu',
+            cabalFormattingProvider = 'cabalfmt',
+          }
+        }
+      })
+      -- Lean
+      lspconfig.leanls.setup({ capabilities = capabilities, })
+    end
+  }
 }
