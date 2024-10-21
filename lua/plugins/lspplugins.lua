@@ -97,6 +97,11 @@ return {
       })
       -- Lean
       lspconfig.leanls.setup({ capabilities = capabilities, })
+      -- Lua
+      lspconfig.lua_ls.setup({
+        cmd = { 'lua-language-server', '--locale=pt-br' },
+        filetypes = { 'lua' },
+      })
     end
   }
 }
