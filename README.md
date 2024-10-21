@@ -11,5 +11,5 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 - The [NeoVim](https://neovim.io/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
 - The plugin manager [Lazy](https://lazy.folke.io/) for [NeoVim](https://neovim.io).
-
-
+- The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
+- A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
