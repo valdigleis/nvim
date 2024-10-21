@@ -102,6 +102,13 @@ return {
         cmd = { 'lua-language-server', '--locale=pt-br' },
         filetypes = { 'lua' },
       })
+      -- OCaml
+      lspconfig.ocamllsp.setup({
+        cmd = { 'ocamllsp' },
+        filetypes = { 'ocaml', 'menhir', 'ocamlinterface', 'ocamllex', 'reason', 'dune' },
+        root_dir = lspconfig.util.root_pattern('*.opam', 'esy.json', 'package.json', '.git', 'dune-project', 'dune-workspace'),
+        single_file_support = true,
+      })
     end
   }
 }
