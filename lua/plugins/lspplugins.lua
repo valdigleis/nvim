@@ -95,6 +95,8 @@ return {
           }
         }
       })
+      -- HTML
+      lspconfig.html.setup({ capabilities = capabilities, })
       -- Lean
       lspconfig.leanls.setup({ capabilities = capabilities, })
       -- Lua
@@ -108,7 +110,14 @@ return {
         filetypes = { 'ocaml', 'menhir', 'ocamlinterface', 'ocamllex', 'reason', 'dune' },
         root_dir = lspconfig.util.root_pattern('*.opam', 'esy.json', 'package.json', '.git', 'dune-project', 'dune-workspace'),
         single_file_support = true,
+        settings = {
+          ocaml = {
+            formattingProvider = 'ocamlformat'
+          }
+        }
       })
+      -- Type(Java)script
+      lspconfig.ts_ls.setup({ capabilities = capabilities })
     end
   }
 }
