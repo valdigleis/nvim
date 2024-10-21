@@ -116,6 +116,10 @@ return {
           }
         }
       })
+      -- Python
+      lspconfig.pyright.setup({ capabilities = capabilities })
+      -- LaTex
+      lspconfig.texlab.setup({ capabilities = capabilities })
       -- Type(Java)script
       lspconfig.ts_ls.setup({ capabilities = capabilities })
     end

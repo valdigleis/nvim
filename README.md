@@ -19,6 +19,7 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 - The language server to the languages CSS and HTML, called [vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted).
 - The language server to the language Lua, called [lua-language-server](https://github.com/LuaLS/lua-language-server).
 - The language server to the languages Javascript and Typescript, download [here](https://github.com/typescript-language-server/typescript-language-server).
+- The language server to the language Python, called [pyright](https://github.com/microsoft/pyright).
 - The sofware collection [GHCup](https://www.haskell.org/ghcup/), please install: [cabal](https://www.haskell.org/cabal/), [stack](https://docs.haskellstack.org/en/stable/),  and [HLS](https://github.com/haskell/haskell-language-server).
 - The hackages: [ormulu](https://hackage.haskell.org/package/ormolu) and [cabalfmt](https://hackage.haskell.org/package/cabal-fmt).
 - The ocaml package manager [opam](https://opam.ocaml.org/).
