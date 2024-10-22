@@ -1,15 +1,11 @@
 -- ------------------------------------------------------------------------------------------------
--- Main config file
+-- Install/Config file to telescope plugin
 -- Author: Valdigleis (Dk4LL) - dk4ll@proton.me
 -- Date: 21/10/2024
 -- ------------------------------------------------------------------------------------------------
 
--- Import basic configs
-require("core.basic")
-
--- Import lazy configs
-require("core.lazy")
-
--- Import key configs
-require("core.keys")
+return {
+  'nvim-telescope/telescope.nvim', tag = '0.1.8',
+  dependencies = { 'nvim-lua/plenary.nvim' }
+}
 
