@@ -8,7 +8,7 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 
 ## Required items on system 🌱
 
-The below list, describe the dependencies to use this config!
+The below list, describes the dependencies to use this NeoVim config!
 
 - The [NeoVim](https://neovim.io/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
