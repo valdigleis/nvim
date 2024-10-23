@@ -6,6 +6,12 @@
 
 return {
   'nvim-telescope/telescope.nvim', tag = '0.1.8',
-  dependencies = { 'nvim-lua/plenary.nvim' }
+  dependencies = {
+    'nvim-lua/plenary.nvim',
+    'luc-tielen/telescope_hoogle'
+  },
+  config = function()
+    require('telescope').load_extension('hoogle')
+  end
 }
 
