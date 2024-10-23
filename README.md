@@ -8,6 +8,8 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 
 ## Required items on system 🌱
 
+The below list, describe the dependencies to use this config!
+
 - The [NeoVim](https://neovim.io/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
 - The plugin manager [Lazy](https://lazy.folke.io/) for [NeoVim](https://neovim.io).
@@ -27,3 +29,4 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 - The hackages: [ormulu](https://hackage.haskell.org/package/ormolu) and [cabalfmt](https://hackage.haskell.org/package/cabal-fmt).
 - The ocaml package manager [opam](https://opam.ocaml.org/).
 - The ocaml packages: [coq-lsp](https://opam.ocaml.org/packages/coq-lsp/), [ocaml-lsp](https://github.com/ocaml/ocaml-lsp) and [ocamlformat](https://opam.ocaml.org/packages/ocamlformat/).
+- The lua package manager [luarocks](https://luarocks.org/).

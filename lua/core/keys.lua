@@ -57,3 +57,21 @@ key.set('n', '<leader>lt', builtin.lsp_type_definitions,  { desc = 'Goto the def
 key.set('n', '<leader>lT', builtin.treesitter,            { desc = 'Lists Function names, variables, from Treesitter' })
 
 
+-- ------------------------------------------------------------------------------------------------
+-- Lazy keymap
+-- ------------------------------------------------------------------------------------------------
+key.set('n', ';l', ':Lazy<CR>',     { desc = 'Open terminal manager' })
+
+
+-- ------------------------------------------------------------------------------------------------
+-- Toggleterm keymaps
+-- ------------------------------------------------------------------------------------------------
+key.set('n', ';t', ':ToggleTerm<CR>',     { desc = 'Open terminal manager' })
+
+
+
+
+
+
+
+
