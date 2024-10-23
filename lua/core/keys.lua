@@ -56,11 +56,13 @@ key.set('n', '<leader>lS', builtin.lsp_document_symbols,  { desc = 'Lists LSP do
 key.set('n', '<leader>lt', builtin.lsp_type_definitions,  { desc = 'Goto the definition of the type of the word under the cursor, if there only one, otherwise show all options' })
 key.set('n', '<leader>lT', builtin.treesitter,            { desc = 'Lists Function names, variables, from Treesitter' })
 
+-- Extensions
+key.set('n', ';h', ':Telescope hoogle<CR>', { desc = 'Open internal Hoogle view' })
 
 -- ------------------------------------------------------------------------------------------------
 -- Lazy keymap
 -- ------------------------------------------------------------------------------------------------
-key.set('n', ';l', ':Lazy<CR>',     { desc = 'Open terminal manager' })
+key.set('n', '<leader>l', ':Lazy<CR>',     { desc = 'Open terminal manager' })
 
 
 -- ------------------------------------------------------------------------------------------------
