@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------------------------
--- Install/Config file to the extension telescope, called toggleterm-manager.nvim
+-- Install/Config file plugins to tools auxiliar of the Neovim
 -- Author: Valdigleis (Dk4LL) - dk4ll@proton.me
 -- Date: 21/10/2024
 -- ------------------------------------------------------------------------------------------------
@@ -8,6 +8,11 @@ return {
   {
     'akinsho/toggleterm.nvim',
     version = "*",
+    config = true
+  },
+  {
+    'barrett-ruth/live-server.nvim',
+    cmd = { 'LiveServerStart', 'LiveServerStop' },
     config = true
   }
 }
