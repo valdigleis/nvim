@@ -116,6 +116,15 @@ return {
           }
         }
       })
+      -- PHP
+      lspconfig.phpactor.setup({
+        on_attach = on_attach,
+        init_options = {
+          ["language_server_phpstan.enabled"] = false,
+          ["language_server_psalm.enabled"] = false,
+        },
+        capabilities = capabilities
+      })
       -- Prolog
       lspconfig.prolog_ls.setup({
         cmd = { 'swipl', '-g', 'use_module(library(lsp_server)).', '-g', 'lsp_server:main', '-t', 'halt', '--', 'stdio', },
@@ -125,7 +134,7 @@ return {
       })
       -- Python
       lspconfig.pyright.setup({ capabilities = capabilities })
-      -- LaTex
+      -- (La)Tex
       lspconfig.texlab.setup({ capabilities = capabilities })
       -- Type(Java)script
       lspconfig.ts_ls.setup({ capabilities = capabilities })

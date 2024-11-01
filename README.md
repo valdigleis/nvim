@@ -25,6 +25,7 @@ The below list, describes the dependencies to use this NeoVim config!
 - The language server to the languages Javascript and Typescript, see details [here](https://github.com/typescript-language-server/typescript-language-server).
 - The language server to the language Prolog, see details [here](https://github.com/jamesnvc/lsp_server).
 - The language server to the language Python, called [pyright](https://github.com/microsoft/pyright).
+- The language server to Emmet, called [emmet-language-server](https://github.com/olrtg/emmet-language-server).
 - The sofware collection [GHCup](https://www.haskell.org/ghcup/), please install: [cabal](https://www.haskell.org/cabal/), [stack](https://docs.haskellstack.org/en/stable/),  and [HLS](https://github.com/haskell/haskell-language-server).
 - The hackages: [ormolu](https://hackage.haskell.org/package/ormolu), [cabalfmt](https://hackage.haskell.org/package/cabal-fmt) and [hoogle](https://hoogle.haskell.org/).
 - The ocaml package manager [opam](https://opam.ocaml.org/).
