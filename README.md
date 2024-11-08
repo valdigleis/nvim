@@ -6,19 +6,28 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 - dk4ll@proton.me (primary mail).
 - valdigleis@gmail.com.
 
-## Required items on system 🌱
+## Basic items on system 🌱
 
-The below list, describes the dependencies to use this NeoVim config!
+Install on your system...
 
 - The [NeoVim](https://neovim.io/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
 - The plugin manager [Lazy](https://lazy.folke.io/) for [NeoVim](https://neovim.io).
+
+>[!TIP]
+> For the best experience, use the [Kitty](https://sw.kovidgoyal.net/kitty/) terminal emulator.
+>
+
+## Dependencies (Softwares and Packages) 📦
+
+The below list, describes the dependencies to use this NeoVim config!
+
 - A line-oriented search tool that recursively searches the current directory for a regex pattern, called [ripgrep](https://github.com/BurntSushi/ripgrep).
 - The reader files sequentially, writing them to standard output, called [bat](https://github.com/sharkdp/bat).
 - The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
 - A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
 - The language [Lean](https://lean-lang.org/download/) (version 4) and the library [mathlib4](https://github.com/leanprover-community/mathlib4).
-- The language server to the language Bash, called [bash-language-server](https://github.com/bash-lsp/bash-language-server).
+- The language server to the language bash, called [bash-language-server](https://github.com/bash-lsp/bash-language-server).
 - The language server to the language C/C++, called [clangd](https://clangd.llvm.org/).
 - The language server to the languages CSS and HTML, called [vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted).
 - The language server to the language Lua, called [lua-language-server](https://github.com/LuaLS/lua-language-server).

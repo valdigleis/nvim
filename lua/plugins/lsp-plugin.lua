@@ -117,13 +117,23 @@ return {
         }
       })
       -- PHP
+      --lspconfig.intelephense.setup({
+      --  cmd = { 'intelephense', '--stdio' },
+      --  filetypes = { 'php' },
+      --})
       lspconfig.phpactor.setup({
-        on_attach = on_attach,
-        init_options = {
-          ["language_server_phpstan.enabled"] = false,
-          ["language_server_psalm.enabled"] = false,
-        },
-        capabilities = capabilities
+        cmd = { 'phpactor', 'language-server', '-vvv' },
+        root_dir = function(startPath)
+          print("root_dir running");
+          local rp = lspconfig.util.root_pattern
+          for _, pattern in pairs({".thisIsDocRoot", "index.php", ".git", "node_modules", "index.php", "composer.json"})
+          do
+            local found = rp({pattern})(startPath)
+            print(pattern, found)
+            if (found and found ~= '') then return found end
+          end
+          return nil
+        end
       })
       -- Prolog
       lspconfig.prolog_ls.setup({
