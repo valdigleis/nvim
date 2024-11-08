@@ -22,7 +22,8 @@ Install on your system...
 
 The below list, describes the dependencies to use this NeoVim config!
 
-- A line-oriented search tool that recursively searches the current directory for a regex pattern, called [ripgrep](https://github.com/BurntSushi/ripgrep).
+- The shell [zsh](https://www.zsh.org/).
+- A line-oriented search tool that recursively searches, called [ripgrep](https://github.com/BurntSushi/ripgrep).
 - The reader files sequentially, writing them to standard output, called [bat](https://github.com/sharkdp/bat).
 - The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
 - A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
@@ -34,7 +35,6 @@ The below list, describes the dependencies to use this NeoVim config!
 - The language server to the languages Javascript and Typescript, see details [here](https://github.com/typescript-language-server/typescript-language-server).
 - The language server to the language Prolog, see details [here](https://github.com/jamesnvc/lsp_server).
 - The language server to the language Python, called [pyright](https://github.com/microsoft/pyright).
-- The language server to Emmet, called [emmet-language-server](https://github.com/olrtg/emmet-language-server).
 - The sofware collection [GHCup](https://www.haskell.org/ghcup/), please install: [cabal](https://www.haskell.org/cabal/), [stack](https://docs.haskellstack.org/en/stable/),  and [HLS](https://github.com/haskell/haskell-language-server).
 - The hackages: [ormolu](https://hackage.haskell.org/package/ormolu), [cabalfmt](https://hackage.haskell.org/package/cabal-fmt) and [hoogle](https://hoogle.haskell.org/).
 - The ocaml package manager [opam](https://opam.ocaml.org/).
