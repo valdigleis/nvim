@@ -3,8 +3,8 @@ I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former pr
 
 ## Contact me 💬
 
-- dk4ll@proton.me (primary mail).
-- valdigleis@gmail.com.
+- valdigleis@gmail.com (primary mail).
+- dk4ll@proton.me.
 
 ## Basic items on system 🌱
 

@@ -13,6 +13,10 @@ local key = vim.keymap
 key.set('n', '<leader>qq', ':qall!<CR>', { silent = true, desc = 'Quit without save' })
 key.set('n', '<leader>wq', ':wqall<CR>', { silent = true, desc = 'Save all and quit' })
 key.set('n', '<leader><CR>', ':bd<CR>', { silent = true, desc = 'Delete buffer' })
+key.set('n', '+', '<C-a>', { silent = true, desc = 'Increment value' })
+key.set('n', '-', '<C-x>', { silent = true, desc = 'Decrement value' })
+key.set('n', 'dw', 'vb"-d', { silent = true, desc = 'Delete a word'})
+key.set('n', '<C-a>', 'gg<S-v>G', { silent = true, desc = 'Select all' })
 
 -- ------------------------------------------------------------------------------------------------
 -- Telescope keymaps
