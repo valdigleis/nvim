@@ -46,7 +46,6 @@ key.set('n', '<leader>tb', builtin.current_buffer_tags, { silent = true, desc = 
 key.set('n', '<leader>tc', builtin.commands, { silent = true, desc = 'Lists available plugin/user commands and runs with <cr>' })
 key.set('n', '<leader>tC', builtin.command_history, { silent = true, desc = 'Lists commands that were executed recently, reruns with <cr>' })
 key.set('n', '<leader>tf', builtin.filetypes, { silent = true, desc = 'Lists all available filetypes' })
--- LazyGit use: tg, and tG 
 key.set('n', '<leader>th', builtin.search_history, { silent = true, desc = 'Lists searches that were executed recently, reruns with <cr>' })
 key.set('n', '<leader>tH', builtin.highlights, { silent = true, desc = 'Lists all available highlights' })
 key.set('n', '<leader>tj', builtin.jumplist, { silent = true, desc = 'Lists Jump List entries' })
@@ -98,15 +97,6 @@ key.set('n', ';t', ':ToggleTerm<CR>', { silent = true, desc = 'Open terminal man
 key.set('n', ';l', ':LiveServerStart<CR>', { silent = true, desc = 'Start the live server' })
 key.set('n', ';L', ':LiveServerStop<CR>', { silent = true, desc = 'Stop the live server' })
 
-
--- ------------------------------------------------------------------------------------------------
--- Lazygit keymaps
--- ------------------------------------------------------------------------------------------------
-key.set('n', '<leader>tg', ':LazyGit<CR>', { silent = true, desc = 'Start LazyGit' })
-key.set('n', '<leader>tG', ':LazyGitConfig<CR>', { silent = true, desc = 'Open LazyGit Config' })
-key.set('n', ';gc', ':LazyGitCurrentFile<CR>', { silent = true, desc = 'Open LazyGit in current file' })
-key.set('n', ';gf', ':LazyGitFilter<CR>', { silent = true, desc = 'Open LazyGit Filter' })
-key.set('n', ';gF', ':LazyGitFilterCurrentFile<CR>', { silent = true, desc = 'Open LazyGit Filter in current file' })
 
 -- ------------------------------------------------------------------------------------------------
 -- Neogen keymaps

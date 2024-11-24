@@ -39,4 +39,3 @@ The below list, describes the dependencies to use this NeoVim config!
 - The ocaml package manager [opam](https://opam.ocaml.org/).
 - The ocaml packages: [coq-lsp](https://opam.ocaml.org/packages/coq-lsp/), [ocaml-lsp](https://github.com/ocaml/ocaml-lsp) and [ocamlformat](https://opam.ocaml.org/packages/ocamlformat/).
 - The lua package manager [luarocks](https://luarocks.org/).
-- The terminal UI for git commands called [lazygit](https://github.com/jesseduffield/lazygit).
