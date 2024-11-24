@@ -1,10 +1,9 @@
 # Hello, humans 👋
-I'm Valdigleis (Dk4LL), a [Flamengo](https://www.flamengo.com.br) fan, former programmer, ex-user and ex-collaborator of the [Debian](https://www.debian.org/) project. Currently, I'm a computer science teacher at [CCICOMP](https://portais.univasf.edu.br/ccicomp) of the [Univasf](https://www.univasf.edu.br) - Brazil. This repository contains my personal config used in the [NeoVim](https://neovim.io/).
+I'm Valdigleis (Dk4LL), a [Peanuts](https://www.peanuts.com/) fan, former programmer, ex-user and ex-collaborator of the [Debian](https://www.debian.org/) project. Currently, I'm a computer science teacher at [CCICOMP](https://portais.univasf.edu.br/ccicomp) of the [Univasf](https://www.univasf.edu.br) - Brazil. This repository contains my personal config used in the [NeoVim](https://neovim.io/).
 
 ## Contact me 💬
 
-- valdigleis@gmail.com (primary mail).
-- dk4ll@proton.me.
+- valdigleis@gmail.com
 
 ## Basic items on system 🌱
 
@@ -18,7 +17,7 @@ Install on your system...
 > For the best experience, use the [Kitty](https://sw.kovidgoyal.net/kitty/) terminal emulator.
 >
 
-## Dependencies (Softwares and Packages) 📦
+## Dependencies (Softwares) 📦
 
 The below list, describes the dependencies to use this NeoVim config!
 
@@ -40,3 +39,4 @@ The below list, describes the dependencies to use this NeoVim config!
 - The ocaml package manager [opam](https://opam.ocaml.org/).
 - The ocaml packages: [coq-lsp](https://opam.ocaml.org/packages/coq-lsp/), [ocaml-lsp](https://github.com/ocaml/ocaml-lsp) and [ocamlformat](https://opam.ocaml.org/packages/ocamlformat/).
 - The lua package manager [luarocks](https://luarocks.org/).
+- The terminal UI for git commands called [lazygit](https://github.com/jesseduffield/lazygit).

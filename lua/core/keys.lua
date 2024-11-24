@@ -4,6 +4,7 @@
 -- Date: 18/09/2024
 -- ------------------------------------------------------------------------------------------------
 
+
 local key = vim.keymap
 
 
@@ -17,6 +18,13 @@ key.set('n', '+', '<C-a>', { silent = true, desc = 'Increment value' })
 key.set('n', '-', '<C-x>', { silent = true, desc = 'Decrement value' })
 key.set('n', 'dw', 'vb"-d', { silent = true, desc = 'Delete a word'})
 key.set('n', '<C-a>', 'gg<S-v>G', { silent = true, desc = 'Select all' })
+
+
+-- ------------------------------------------------------------------------------------------------
+-- Personal functions keymaps
+-- ------------------------------------------------------------------------------------------------
+key.set('n', '<leader>bk', ":e ~/.config/nvim/lua/core/keys.lua<CR>", { silent = true, desc = 'Open Keymaps' })
+
 
 -- ------------------------------------------------------------------------------------------------
 -- Telescope keymaps
@@ -38,6 +46,7 @@ key.set('n', '<leader>tb', builtin.current_buffer_tags, { silent = true, desc = 
 key.set('n', '<leader>tc', builtin.commands, { silent = true, desc = 'Lists available plugin/user commands and runs with <cr>' })
 key.set('n', '<leader>tC', builtin.command_history, { silent = true, desc = 'Lists commands that were executed recently, reruns with <cr>' })
 key.set('n', '<leader>tf', builtin.filetypes, { silent = true, desc = 'Lists all available filetypes' })
+-- LazyGit use: tg, and tG 
 key.set('n', '<leader>th', builtin.search_history, { silent = true, desc = 'Lists searches that were executed recently, reruns with <cr>' })
 key.set('n', '<leader>tH', builtin.highlights, { silent = true, desc = 'Lists all available highlights' })
 key.set('n', '<leader>tj', builtin.jumplist, { silent = true, desc = 'Lists Jump List entries' })
@@ -49,7 +58,7 @@ key.set('n', '<leader>tP', builtin.pickers, { silent = true, desc = 'Lists the p
 key.set('n', '<leader>tr', builtin.registers, { silent = true, desc = 'Lists vim registers, pastes the contents of the register on <cr>' })
 key.set('n', '<leader>tR', builtin.resume, { silent = true, desc = 'Lists the results incl. multi-selections of the previous picker' })
 key.set('n', '<leader>ts', builtin.colorscheme, { silent = true, desc = 'Lists available colorschemes and applies them on <cr>' })
-key.set('n', '<leader>tS', builtin.spell_suggest, { silent = true, desc = 'Lists spelling suggestions for the current word under the cursor, replaces word with selected suggestion on <cr>' })
+key.set('n', '<leader>tS', builtin.spell_suggest, { silent = true, desc = 'Lists spelling suggestions for the word under the cursor, replaces word using <cr>' })
 key.set('n', '<leader>tt', builtin.tags, { silent = true, desc = 'Lists tags in current directory with tag location file preview' })
 key.set('n', '<leader>tT', builtin.help_tags, { silent = true, desc = 'Lists available help tags and opens a new window with the relevant help info on <cr>' })
 key.set('n', '<leader>tv', builtin.vim_options, { silent = true, desc = 'Lists vim options, allows you to edit the current value on <cr>' })
@@ -57,15 +66,15 @@ key.set('n', '<leader>tv', builtin.vim_options, { silent = true, desc = 'Lists v
 -- Codes and LSP
 key.set('n', '<leader>lc', builtin.lsp_incoming_calls, { silent = true, desc = 'Lists LSP incoming calls for word under the cursor' })
 key.set('n', '<leader>lC', builtin.lsp_outgoing_calls, { silent = true, desc = 'Lists LSP outgoing calls for word under the cursor' })
-key.set('n', '<leader>lD', builtin.diagnostics, { silent = true, desc = 'Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer.' })
-key.set('n', '<leader>ld', builtin.lsp_definitions, { silent = true, desc = 'Goto the definition of the word under the cursor, if there only one, otherwise show all options in Telescope' })
+key.set('n', '<leader>lD', builtin.diagnostics, { silent = true, desc = 'Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer' })
+key.set('n', '<leader>ld', builtin.lsp_definitions, { silent = true, desc = 'Goto|Show the definition of the word under the cursor.' })
 key.set('n', '<leader>lf', builtin.quickfix, { silent = true, desc = 'Lists items in the quickfix list' })
 key.set('n', '<leader>lF', builtin.quickfixhistory, { silent = true, desc = 'Lists all quickfix lists in your history and open them with builtin.quickfix or quickfix window' })
-key.set('n', '<leader>li', builtin.lsp_implementations, { silent = true, desc = 'Goto the implementation of the word under the cursor if there only one, otherwise show all options in Telescope' })
+key.set('n', '<leader>li', builtin.lsp_implementations, { silent = true, desc = 'Goto|Show the implementation of the word under the cursor.' })
 key.set('n', '<leader>lr', builtin.lsp_references, { silent = true, desc = 'Lists LSP references for word under the cursor' })
 key.set('n', '<leader>ls', builtin.lsp_workspace_symbols, { silent = true, desc = 'Lists LSP document symbols in the current workspace' })
 key.set('n', '<leader>lS', builtin.lsp_document_symbols, { silent = true, desc = 'Lists LSP document symbols in the current buffer' })
-key.set('n', '<leader>lt', builtin.lsp_type_definitions, { silent = true, desc = 'Goto the definition of the type of the word under the cursor, if there only one, otherwise show all options' })
+key.set('n', '<leader>lt', builtin.lsp_type_definitions, { silent = true, desc = 'Goto|Show the definition of the type of the word under the cursor' })
 key.set('n', '<leader>lT', builtin.treesitter, { silent = true, desc = 'Lists Function names, variables, from Treesitter' })
 
 -- Extensions
@@ -88,3 +97,18 @@ key.set('n', ';t', ':ToggleTerm<CR>', { silent = true, desc = 'Open terminal man
 -- ------------------------------------------------------------------------------------------------
 key.set('n', ';l', ':LiveServerStart<CR>', { silent = true, desc = 'Start the live server' })
 key.set('n', ';L', ':LiveServerStop<CR>', { silent = true, desc = 'Stop the live server' })
+
+
+-- ------------------------------------------------------------------------------------------------
+-- Lazygit keymaps
+-- ------------------------------------------------------------------------------------------------
+key.set('n', '<leader>tg', ':LazyGit<CR>', { silent = true, desc = 'Start LazyGit' })
+key.set('n', '<leader>tG', ':LazyGitConfig<CR>', { silent = true, desc = 'Open LazyGit Config' })
+key.set('n', ';gc', ':LazyGitCurrentFile<CR>', { silent = true, desc = 'Open LazyGit in current file' })
+key.set('n', ';gf', ':LazyGitFilter<CR>', { silent = true, desc = 'Open LazyGit Filter' })
+key.set('n', ';gF', ':LazyGitFilterCurrentFile<CR>', { silent = true, desc = 'Open LazyGit Filter in current file' })
+
+-- ------------------------------------------------------------------------------------------------
+-- Neogen keymaps
+-- ------------------------------------------------------------------------------------------------
+key.set('n', '<leader>cc', function() require("neogen").generate({}) end, { silent = true, desc = 'Neogen Comment' })
