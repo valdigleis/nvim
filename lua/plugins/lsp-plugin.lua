@@ -144,6 +144,8 @@ return {
       })
       -- Python
       lspconfig.pyright.setup({ capabilities = capabilities })
+      -- Rust
+      lspconfig.rust_analyzer.setup({ capabilities = capabilities })
       -- (La)Tex
       lspconfig.texlab.setup({ capabilities = capabilities })
       -- Type(Java)script
