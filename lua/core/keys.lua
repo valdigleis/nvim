@@ -105,13 +105,10 @@ key.set('n', '<leader>cc', function() require("neogen").generate({}) end, { sile
 
 
 -- ------------------------------------------------------------------------------------------------
--- Git keymaps
+-- Mason keymaps
 -- ------------------------------------------------------------------------------------------------
-key.set('n', '<leader>gb', ':GitBlame<CR>', { silent = true, desc = 'Opens git blame window' })
-key.set('n', '<leader>gc', ':GitDiff<CR>', { silent = true, desc = 'Opens diff that compares against the current index' })
-key.set('n', '<leader>gC', ':GitDiffClose<CR>', { silent = true, desc = 'Close the git diff window' })
-key.set('n', '<leader>gr', ':GitRevert<CR>', { silent = true, desc = 'Revert to specific commit' })
-key.set('n', '<leader>gR', ':GitRevertFile', { silent = true, desc = 'Revert the current file to specific commit' })
+key.set('n', '<leader>mo', ':Mason<CR>', { silent = true, desc = 'Open Mason' })
+key.set('n', '<leader>mu', ':MasonUpdate<CR>', { silent = true, desc = 'Open Mason' })
 
 
 

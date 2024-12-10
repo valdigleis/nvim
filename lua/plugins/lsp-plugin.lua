@@ -97,6 +97,8 @@ return {
       })
       -- HTML
       lspconfig.html.setup({ capabilities = capabilities, })
+      -- Java
+      lspconfig.jdtls.setup({ capabilities = capabilities })
       -- Lean
       lspconfig.leanls.setup({ capabilities = capabilities, })
       -- Lua
@@ -144,8 +146,6 @@ return {
       })
       -- Python
       lspconfig.pyright.setup({ capabilities = capabilities })
-      -- Rust
-      lspconfig.rust_analyzer.setup({ capabilities = capabilities })
       -- (La)Tex
       lspconfig.texlab.setup({ capabilities = capabilities })
       -- Type(Java)script

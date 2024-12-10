@@ -14,5 +14,11 @@ return {
     'barrett-ruth/live-server.nvim',
     cmd = { 'LiveServerStart', 'LiveServerStop' },
     config = true
+  },
+  {
+    'williamboman/mason.nvim',
+    config = function()
+      require("mason").setup()
+    end
   }
 }
