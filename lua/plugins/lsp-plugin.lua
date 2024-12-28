@@ -99,8 +99,6 @@ return {
       lspconfig.html.setup({ capabilities = capabilities, })
       -- Java
       lspconfig.jdtls.setup({ capabilities = capabilities })
-      -- Lean
-      lspconfig.leanls.setup({ capabilities = capabilities, })
       -- Lua
       lspconfig.lua_ls.setup({
         cmd = { 'lua-language-server', '--locale=pt-br' },
@@ -118,11 +116,6 @@ return {
           }
         }
       })
-      -- PHP
-      --lspconfig.intelephense.setup({
-      --  cmd = { 'intelephense', '--stdio' },
-      --  filetypes = { 'php' },
-      --})
       lspconfig.phpactor.setup({
         cmd = { 'phpactor', 'language-server', '-vvv' },
         root_dir = function(startPath)
