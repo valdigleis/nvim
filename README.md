@@ -22,9 +22,9 @@ This configuration provides support for the following listed languages:
 ## Dependencies (Softwares) 📦
 For this configuration to work correctly, in addition to the language servers mentioned in the previous section, you must have the following software in your system's PATH.
 
-- The shell [zsh](https://www.zsh.org/).
-- A line-oriented search tool that recursively searches, called [ripgrep](https://github.com/BurntSushi/ripgrep).
-- The reader files sequentially, writing them to standard output, called [bat](https://github.com/sharkdp/bat).
-- The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/).
+- The shell [zsh](https://www.zsh.org/), tested with the version **5.8.1**.
+- A line-oriented search tool that recursively searches, called [ripgrep](https://github.com/BurntSushi/ripgrep), tested with the version **13.0.0**.
+- The reader files sequentially, writing them to standard output, called [bat](https://github.com/sharkdp/bat), tested with the version **0.19.0**.
+- The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/), tested with the version **0.24.5**.
 - A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
 
