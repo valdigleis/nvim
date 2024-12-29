@@ -15,7 +15,8 @@ This configuration provides support for the following listed languages:
 - **C** and **C++** using the language server [clangd](https://clangd.llvm.org/), tested with the version **14.0.0**.
 - **CSS** using the [vscode-css-language-server](https://github.com/hrsh7th/vscode-langservers-extracted), tested with the version **4.10.0**.
 - **Javascript** and **Typescript** using the [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server), tested with the version **4.3.3**.
-- **Lua** using the [lua language server](https://luals.github.io/), tested with the version 3.10.5.
+- **LaTeX** using the [texlab](https://github.com/latex-lsp/texlab), tested with the version **4.3.2**.
+- **Lua** using the [lua language server](https://luals.github.io/), tested with the version **3.10.5**.
 - **Python** using the [pyright](https://github.com/microsoft/pyright), tested with the version **1.1.391**.
 - **Prolog**, specifically [swi-prolog](https://www.swi-prolog.org/) using the [Prolog Language server](https://github.com/jamesnvc/lsp_server), tested with the version **2.2.7**.
 
