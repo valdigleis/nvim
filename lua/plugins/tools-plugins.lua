@@ -1,6 +1,6 @@
 -- ------------------------------------------------------------------------------------------------
 -- Install/Config file plugins to tools auxiliar of the Neovim
--- Author: Valdigleis (Dk4LL) - dk4ll@proton.me
+-- Author: Valdigleis (valdigleis@gmail.com)
 -- Date: 21/10/2024
 -- ------------------------------------------------------------------------------------------------
 

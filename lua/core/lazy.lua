@@ -1,6 +1,6 @@
 -- ------------------------------------------------------------------------------------------------
 -- Installer/Config file for the lazy.nvim Plugin manager
--- Author: Valdigleis (Dk4LL) - dk4ll@proton.me
+-- Author: Valdigleis (valdigleis@gmail.com)
 -- Date: 18/09/2024
 -- ------------------------------------------------------------------------------------------------
 
