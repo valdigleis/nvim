@@ -5,11 +5,11 @@
 -- ------------------------------------------------------------------------------------------------
 
 return {
-  {
-    'akinsho/toggleterm.nvim',
-    version = "*",
-    config = true
-  },
+--  {
+--    'akinsho/toggleterm.nvim',
+--    version = "*",
+--    config = true
+--  },
   {
     'barrett-ruth/live-server.nvim',
     cmd = { 'LiveServerStart', 'LiveServerStop' },
