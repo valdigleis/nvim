@@ -65,7 +65,7 @@ key.set('n', '<leader>tv', builtin.vim_options, { silent = true, desc = 'Lists v
 -- Codes and LSP
 key.set('n', '<leader>lc', builtin.lsp_incoming_calls, { silent = true, desc = 'Lists LSP incoming calls for word under the cursor' })
 key.set('n', '<leader>lC', builtin.lsp_outgoing_calls, { silent = true, desc = 'Lists LSP outgoing calls for word under the cursor' })
-key.set('n', '<leader>lD', builtin.diagnostics, { silent = true, desc = 'Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer' })
+key.set('n', '<leader>lD', builtin.diagnostics, { silent = true, desc = 'Lists Diagnostics for all open buffers or a specific buffer.' })
 key.set('n', '<leader>ld', builtin.lsp_definitions, { silent = true, desc = 'Goto|Show the definition of the word under the cursor.' })
 key.set('n', '<leader>lf', builtin.quickfix, { silent = true, desc = 'Lists items in the quickfix list' })
 key.set('n', '<leader>lF', builtin.quickfixhistory, { silent = true, desc = 'Lists all quickfix lists in your history and open them with builtin.quickfix or quickfix window' })
@@ -88,7 +88,7 @@ key.set('n', '<leader><leader>', ':Lazy<CR>', { silent = true, desc = 'Open term
 -- ------------------------------------------------------------------------------------------------
 -- Toggleterm keymaps
 -- ------------------------------------------------------------------------------------------------
-key.set('n', ';t', ':ToggleTerm<CR>', { silent = true, desc = 'Open terminal manager' })
+--key.set('n', ';t', ':ToggleTerm<CR>', { silent = true, desc = 'Open terminal manager' })
 
 
 -- ------------------------------------------------------------------------------------------------
