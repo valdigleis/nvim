@@ -6,7 +6,6 @@ Install on your system...
 
 - The [Vim](https://www.vim.org/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
-- The plugin manager [vim-plug](https://github.com/junegunn/vim-plug).
 
 ## Languages 💬
 This configuration provides support for the following listed languages:
