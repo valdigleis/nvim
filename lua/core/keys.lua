@@ -107,8 +107,8 @@ key.set('n', '<leader>cc', function() require("neogen").generate({}) end, { sile
 -- ------------------------------------------------------------------------------------------------
 -- Mason keymaps
 -- ------------------------------------------------------------------------------------------------
-key.set('n', '<leader>mo', ':Mason<CR>', { silent = true, desc = 'Open Mason' })
-key.set('n', '<leader>mu', ':MasonUpdate<CR>', { silent = true, desc = 'Open Mason' })
+key.set('n', ';m', ':Mason<CR>', { silent = true, desc = 'Open Mason' })
+key.set('n', ';M', ':MasonUpdate<CR>', { silent = true, desc = 'Open Mason' })
 
 
 
