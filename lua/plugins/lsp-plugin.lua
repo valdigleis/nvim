@@ -119,12 +119,12 @@ return {
       lspconfig.phpactor.setup({
         cmd = { 'phpactor', 'language-server', '-vvv' },
         root_dir = function(startPath)
-          --print("root_dir running");
+          print("root_dir running");
           local rp = lspconfig.util.root_pattern
           for _, pattern in pairs({".thisIsDocRoot", "index.php", ".git", "node_modules", "index.php", "composer.json"})
           do
             local found = rp({pattern})(startPath)
-            --print(pattern, found)
+            print(pattern, found)
             if (found and found ~= '') then return found end
           end
           return nil
