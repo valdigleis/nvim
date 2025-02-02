@@ -1,10 +1,10 @@
 # Hello, humans 👋
-I'm Valdigleis (Dk4LL), a [Peanuts](https://www.peanuts.com/) fan, former programmer, ex-user and ex-collaborator of the [Debian](https://www.debian.org/) project. Currently, I'm a computer science teacher at [CCICOMP](https://portais.univasf.edu.br/ccicomp) of the [Univasf](https://www.univasf.edu.br) - Brazil. This repository contains my personal config used in the [Vim](https://www.vim.org/).
+I'm Valdigleis (Dk4LL), a [Peanuts](https://www.peanuts.com/) fan, former programmer, ex-user and ex-collaborator of the [Debian](https://www.debian.org/) project. Currently, I'm a computer science teacher at [CCICOMP](https://portais.univasf.edu.br/ccicomp) of the [Univasf](https://www.univasf.edu.br) - Brazil. This repository contains my personal config used in the [NeoVim](https://www.neovim.io/).
 
 ## Basic items on system 🌱
 Install on your system...
 
-- The [Vim](https://www.vim.org/) editor, obviously!
+- The [NeoVim](https://www.neovim.io/) editor, obviously!
 - A [Nerd font](https://www.nerdfonts.com/), particularly recommend the font: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip).
 
 ## Languages 💬
@@ -22,9 +22,8 @@ This configuration provides support for the following listed languages:
 ## Dependencies (Softwares) 📦
 For this configuration to work correctly, in addition to the language servers mentioned in the previous section, you must have the following software in your system's PATH.
 
-- The shell [zsh](https://www.zsh.org/), tested with the version **5.8.1**.
 - A line-oriented search tool that recursively searches, called [ripgrep](https://github.com/BurntSushi/ripgrep), tested with the version **13.0.0**.
 - The reader files sequentially, writing them to standard output, called [bat](https://github.com/sharkdp/bat), tested with the version **0.19.0**.
 - The parser generator tool called [tree-sitter](https://tree-sitter.github.io/tree-sitter/), tested with the version **0.24.5**.
-- A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
+- A compiler C/C++ for compile files for the tree-sitter, options are: [clang](https://clang.llvm.org/) or [gcc](https://gcc.gnu.org/).
 

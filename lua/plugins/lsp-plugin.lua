@@ -116,10 +116,11 @@ return {
           }
         }
       })
+      -- PHP
       lspconfig.phpactor.setup({
         cmd = { 'phpactor', 'language-server', '-vvv' },
         root_dir = function(startPath)
-          print("root_dir running");
+          print("PHP language server running!");
           local rp = lspconfig.util.root_pattern
           for _, pattern in pairs({".thisIsDocRoot", "index.php", ".git", "node_modules", "index.php", "composer.json"})
           do

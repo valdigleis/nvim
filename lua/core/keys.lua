@@ -43,13 +43,13 @@ key.set('n', '<leader>fr', builtin.oldfiles, { silent = true, desc = 'Lists prev
 -- More telescope Vim Pickers
 key.set('n', '<leader>ta', builtin.autocommands, { silent = true, desc = 'Lists vim autocommands and goes to their declaration on <cr>' })
 key.set('n', '<leader>tb', builtin.current_buffer_tags, { silent = true, desc = 'Lists all of the tags for the currently open buffer, with a preview' })
-key.set('n', '<leader>tc', builtin.commands, { silent = true, desc = 'Lists available plugin/user commands and runs with <cr>' })
-key.set('n', '<leader>tC', builtin.command_history, { silent = true, desc = 'Lists commands that were executed recently, reruns with <cr>' })
+key.set('n', '<leader>tc', builtin.commands, { silent = true, desc = 'Show and runs commands' })
+key.set('n', '<leader>tC', builtin.command_history, { silent = true, desc = 'Show commands history' })
 key.set('n', '<leader>tf', builtin.filetypes, { silent = true, desc = 'Lists all available filetypes' })
 key.set('n', '<leader>th', builtin.search_history, { silent = true, desc = 'Lists searches that were executed recently, reruns with <cr>' })
 key.set('n', '<leader>tH', builtin.highlights, { silent = true, desc = 'Lists all available highlights' })
 key.set('n', '<leader>tj', builtin.jumplist, { silent = true, desc = 'Lists Jump List entries' })
-key.set('n', '<leader>tk', builtin.keymaps, { silent = true, desc = 'Lists normal mode keymappings' })
+key.set('n', '<leader>tk', builtin.keymaps, { silent = true, desc = 'Show mode keymappings' })
 key.set('n', '<leader>tl', builtin.loclist, { silent = true, desc = 'Lists items from the current windows location list' })
 key.set('n', '<leader>tm', builtin.man_pages, { silent = true, desc = 'Lists manpage entries, opens them in a help window on <cr>' })
 key.set('n', '<leader>tM', builtin.marks, { silent = true, desc = 'Lists vim marks and their value' })
@@ -88,7 +88,7 @@ key.set('n', '<leader><leader>', ':Lazy<CR>', { silent = true, desc = 'Open term
 -- ------------------------------------------------------------------------------------------------
 -- Toggleterm keymaps
 -- ------------------------------------------------------------------------------------------------
---key.set('n', ';t', ':ToggleTerm<CR>', { silent = true, desc = 'Open terminal manager' })
+--key.set('n', ';t', ':term_map.toggle<CR>', { silent = true, desc = 'Open terminal manager' })
 
 
 -- ------------------------------------------------------------------------------------------------
