@@ -5,11 +5,15 @@
 -- ------------------------------------------------------------------------------------------------
 
 return {
---  {
---    'akinsho/toggleterm.nvim',
---    version = "*",
---    config = true
---  },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = function()
+      require("toggleterm").setup({
+        shell = "bash",
+      })
+    end
+  },
   {
     'barrett-ruth/live-server.nvim',
     cmd = { 'LiveServerStart', 'LiveServerStop' },
