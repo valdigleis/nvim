@@ -120,12 +120,12 @@ return {
       lspconfig.phpactor.setup({
         cmd = { 'phpactor', 'language-server', '-vvv' },
         root_dir = function(startPath)
-          print("PHP language server running!");
+          print(">>> PHP language server running!");
           local rp = lspconfig.util.root_pattern
           for _, pattern in pairs({".thisIsDocRoot", "index.php", ".git", "node_modules", "index.php", "composer.json"})
           do
             local found = rp({pattern})(startPath)
-            print(pattern, found)
+            -- print(pattern, found)
             if (found and found ~= '') then return found end
           end
           return nil
@@ -140,6 +140,8 @@ return {
       })
       -- Python
       lspconfig.pyright.setup({ capabilities = capabilities })
+      -- Rust
+      lspconfig.rust_analyzer.setup({ capabilities = capabilities })
       -- (La)Tex
       lspconfig.texlab.setup({ capabilities = capabilities })
       -- Type(Java)script
