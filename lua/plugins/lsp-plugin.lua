@@ -1,6 +1,6 @@
 -- ------------------------------------------------------------------------------------------------
 -- -- Install/Config plugins to language server  protocol and autocomplete
--- -- Author: Valdigleis (Dk4LL) - dk4ll@proton.me
+-- -- Author: Valdigleis (valdigleis@gmail.com)
 -- -- Date: 18/09/2024
 -- -- ----------------------------------------------------------------------------------------------
 
