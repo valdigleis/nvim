@@ -44,5 +44,59 @@ return {
         end,
       })
     end
+  },
+  {
+    "MunifTanjim/nui.nvim",
+  },
+  {
+    "aznhe21/actions-preview.nvim",
+    config = function()
+      --vim.keymap.set({ "v", "n" }, "gf", require("actions-preview").code_actions)
+      require("actions-preview").setup({
+        diff = { ctxlen = 3, },
+         highlight_command = {
+          -- require("actions-preview.highlight").delta(),
+          -- require("actions-preview.highlight").diff_so_fancy(),
+          -- require("actions-preview.highlight").diff_highlight(),
+        },
+        backend = { "telescope", "nui" },
+        telescope = vim.tbl_extend(
+          "force",
+          require("telescope.themes").get_dropdown(),
+          {
+            make_value = nil,
+            make_make_display = nil,
+          }
+        ),
+        nui = {
+          dir = "col",
+          keymap = nil,
+          layout = {
+            position = "50%",
+            size = {
+              width = "60%",
+              height = "90%",
+            },
+            min_width = 40,
+            min_height = 10,
+            relative = "editor",
+          },
+        },
+        preview = {
+          size = "60%",
+          border = {
+            style = "rounded",
+            padding = { 0, 1 },
+          },
+        },
+        select = {
+          size = "40%",
+          border = {
+            style = "rounded",
+            padding = { 0, 1 },
+          },
+        },
+      })
+    end,
   }
 }

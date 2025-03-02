@@ -76,6 +76,7 @@ key.set('n', '<leader>ld', builtin.lsp_definitions, { silent = true, desc = 'Got
 key.set('n', '<leader>lf', builtin.quickfix, { silent = true, desc = 'Lists items in the quickfix list' })
 key.set('n', '<leader>lF', builtin.quickfixhistory, { silent = true, desc = 'Lists all quickfix lists in your history and open them with builtin' })
 key.set('n', '<leader>li', builtin.lsp_implementations, { silent = true, desc = 'Goto|Show the implementation of the word under the cursor.' })
+key.set('n', '<leader>lq', require("actions-preview").code_actions, { silent = true, desc = 'Open quickfix menu' })
 key.set('n', '<leader>lr', builtin.lsp_references, { silent = true, desc = 'Lists LSP references for word under the cursor' })
 key.set('n', '<leader>ls', builtin.lsp_workspace_symbols, { silent = true, desc = 'Lists LSP document symbols in the current workspace' })
 key.set('n', '<leader>lS', builtin.lsp_document_symbols, { silent = true, desc = 'Lists LSP document symbols in the current buffer' })
