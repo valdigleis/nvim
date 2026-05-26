@@ -1,0 +1,8 @@
+# Diretórios
+autoload/
+plugged/
+
+# Arquivos
+.netrwhist
+
+*.swp
