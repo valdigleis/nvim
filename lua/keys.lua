@@ -58,7 +58,8 @@ keymap.set("n", "<leader>gc", ":diffoff<CR>", { silent = true })
 -- ---------------------------------------------------------------------------------------------------------------------
 
 -- Documentação lateral
-keymap.set("n", "gK", ":call CocAction('doHover', 'preview') <Bar> wincmd P <Bar> wincmd L<CR>", { silent = true })
+--keymap.set("n", "gK", ":call CocAction('doHover', 'preview') <Bar> wincmd P <Bar> wincmd L<CR>", { silent = true })
+keymap.set("n", "gK", ":call CocAction('doHover', 'preview') <Bar> wincmd P <Bar> setlocal nomodifiable readonly<Bar> wincmd L<CR>", { silent = true })
 
 -- Navegação CoC
 keymap.set("n", "g[", "<Plug>(coc-diagnostics-prev)", { silent = true, nowait = true })
