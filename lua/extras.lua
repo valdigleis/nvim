@@ -9,7 +9,8 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
   -- Tema de cores
-  Plug('dracula/vim')
+  --Plug('dracula/vim')
+  Plug('rebelot/kanagawa.nvim')
 
   -- Adiciona o uso e apresentação dos devicons
   Plug('nvim-tree/nvim-web-devicons')
