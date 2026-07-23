@@ -41,6 +41,9 @@ vim.call('plug#begin')
   Plug('junegunn/fzf.vim')
   Plug('antoinemadec/coc-fzf', { ['branch'] = 'release' })
 
+  -- Disnibiliza visualização (preview) das cores
+  Plug 'norcalli/nvim-colorizer.lua'
+
   -- Disponibiliza o uso de Emmet usando (C-y ,)
   Plug('mattn/emmet-vim')
 

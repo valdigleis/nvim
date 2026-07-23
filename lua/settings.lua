@@ -216,5 +216,6 @@ local config = {
 require("nvim-tree").setup(config)
 
 
+require("colorizer").setup()
 
 
