@@ -62,5 +62,6 @@ vim.g.coc_global_extensions = {
   'coc-pyright',
   'coc-json',
   'coc-tsserver',
-  'coc-phpls'
+  'coc-phpls',
+  'coc-rust-analyzer'
 }
